@@ -1,7 +1,10 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {
-
+.controller('DashCtrl', function($scope, $ionicAnalytics) {
+  $ionicAnalytics.track('Purchase Item', {
+      item_id: 'lpdsx',
+      item_name: 'Leopard Socks'
+    });
 })
 
 .controller('DashCtrl', function($scope) {
